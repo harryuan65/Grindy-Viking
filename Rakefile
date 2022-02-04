@@ -8,7 +8,7 @@ task :solution, [:difficulty, :topic] do |_t, args|
     puts 'Missing args'
     exit
   end
-  unless %w[easy medium hard].include?(args[:difficulty])
+  unless %w[Easy Medium Hard].include?(args[:difficulty])
     puts "Invalid difficulty: #{args[:difficulty]}"
     exit
   end
