@@ -2,11 +2,11 @@
 include:
   - "**/*.rb"
 exclude:
-  - spec/**/*
   - test/**/*
   - vendor/**/*
   - ".bundle/**/*"
-require: []
+require:
+  - rspec-expectations
 domains: []
 reporters:
   - rubocop
