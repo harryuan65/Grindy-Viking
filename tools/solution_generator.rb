@@ -6,7 +6,7 @@ require_relative 'folder_generator'
 # Generates a solution
 class SolutionGenerator
   def self.perform!(difficulty, topic)
-    root = File.join('leetcode', difficulty, topic)
+    root = File.join(difficulty, topic)
 
     FolderGenerator.perform!(root)
     FileGenerator.perform!(File.join(root, 'solution.rb'))
