@@ -1,0 +1,17 @@
+AllCops:
+  NewCops: disable
+
+Metrics/AbcSize:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MixinUsage:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
