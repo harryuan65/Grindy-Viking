@@ -10,8 +10,13 @@ class SolutionGenerator
 
     FolderGenerator.perform!(root)
     FileGenerator.perform!(File.join(root, 'solution.rb'))
-    FolderGenerator.perform!(File.join(root, 'spec'))
-    FileGenerator.perform!(File.join(root, 'spec', 'solution_spec.rb')) do |f|
+    FileGenerator.perform!(File.join(root, 'Solution.md')) do |f|
+      template = File.read('tools/templates/solution.md.erb')
+      result = ERB.new(template).result
+      f.write(result)
+    end
+    # FolderGenerator.perform!(File.join(root, 'spec'))
+    FileGenerator.perform!(File.join(root, 'solution_spec.rb')) do |f|
       @method = '#solution'
       template = File.read('tools/templates/solution_spec.rb.erb')
       result = ERB.new(template).result(binding)

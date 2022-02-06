@@ -15,3 +15,6 @@ Style/MixinUsage:
 
 Metrics/MethodLength:
   Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
