@@ -1,3 +1,5 @@
+#BinarySearch
+
 # 思路
 
 針對同一個 Array ，給起始 si 終點 ei。比較 target 跟 si, ei 的中間點 `nums[middle]`，

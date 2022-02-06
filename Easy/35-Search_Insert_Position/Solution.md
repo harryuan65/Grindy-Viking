@@ -1,6 +1,6 @@
-# 思路
+#BinarySearch
 
-https://leetcode.com/problems/search-insert-position/
+# 思路
 
 ```ad-note
 ### Input
