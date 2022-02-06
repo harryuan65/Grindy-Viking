@@ -3,13 +3,15 @@
 # @return {Integer}
 
 def bs(nums, si, ei, target)
-  mid = si + ((ei - si) / 2).floor
-  puts "#{si} #{ei} #{nums[mid]} |#{target <=> nums[mid]}"
   if si >= ei
-    res = mid + (target <=> nums[mid])
-    res = 0 if res.negative?
-    return res
+    if target > nums[si]
+      return si + 1
+    else # less and equal are the same position
+      return si
+    end
   end
+
+  mid = si + ((ei - si) / 2).floor
 
   if target < nums[mid]
     bs(nums, si, mid - 1, target)
