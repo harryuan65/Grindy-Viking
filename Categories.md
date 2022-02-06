@@ -8,3 +8,5 @@
 ## Two Pointers
 - [[977_Squares_of_a_Sorted_Array]]
 - [[189-RotateArray]]
+- [[283_Move_Zeroes]]
+- [[167_Two_Sum_II_-_Input_Array_Is_Sorted]]
