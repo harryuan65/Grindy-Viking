@@ -85,13 +85,13 @@ end
 幹這樣太慢了！！
 ![[Time Limit Exceeded.png]]
 
-
 四次失敗之後終於去參考提示跟其他人的做法了。
 所謂 Two pointers 是說：一個去 iterate array，另一個去找是 0 的元素。
 所以一開始先假設沒有出現 0 ，`L` 設成 `-1`。
 如果第一次遇到 0 ，就設定 L 為此位置
 如果遇到非零項，且前面有出現 0（ L 已設定）就 swap。
 其他就一直往下走直到結束
+
 ```ruby
 # @param {Integer[]} nums
 # @return {Void} Do not return anything, modify nums in-place instead.
@@ -100,7 +100,7 @@ def move_zeroes(nums)
 
   l = -1
   nums.each_with_index do |e, i|
-      if l.negative? 
+      if l.negative?
           l = i if e.zero?
       else
           if e.nonzero?
@@ -108,11 +108,12 @@ def move_zeroes(nums)
               nums[i] = 0
               l+=1
           end
-      end 
+      end
   end
 end
 
 ```
+
 剛剛的 code:
 ![[Before.png]]
 
