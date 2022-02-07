@@ -21,6 +21,21 @@ index1 < index2
 如果太小就把小的換下一個
 如果太大就把大的換前一個
 一定會湊出一解。
+像這樣：
+
+```plaintext
+target = 13
+[0,1,2,6,8,10,11,14,20]
+ L                   R  ,0+20 > 13 => move R backward
+[0,1,2,6,8,10,11,14,20]
+ L                R     ,0+14 > 13 => move R backward
+[0,1,2,6,8,10,11,14,20]
+ L             R        ,0+11 < 13 => move L forward
+[0,1,2,6,8,10,11,14,20]
+   L          R         ,1+11 < 13 => move L forward
+[0,1,2,6,8,10,11,14,20]
+     L         R        ,2+11 == 13 => return [l+1, r+1] #
+```
 
 ```ruby
 # @param {Integer[]} numbers
@@ -40,4 +55,5 @@ def two_sum(numbers, target)
     end
 end
 ```
+
 ![[submission.png]]
