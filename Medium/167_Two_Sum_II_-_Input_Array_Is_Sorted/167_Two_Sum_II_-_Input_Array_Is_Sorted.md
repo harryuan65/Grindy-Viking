@@ -56,4 +56,4 @@ def two_sum(numbers, target)
 end
 ```
 
-![[submission.png]]
+![[Coding/Medium/167_Two_Sum_II_-_Input_Array_Is_Sorted/images/submission.png]]
