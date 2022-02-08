@@ -10,3 +10,7 @@
 - [[189-RotateArray]]
 - [[283_Move_Zeroes]]
 - [[167_Two_Sum_II_-_Input_Array_Is_Sorted]]
+- [[344_Reverse_String]]
+- [[557_Reverse_Words_in_a_String_III]]
+- [[876_Middle_of_the_Linked_List]]
+- 
