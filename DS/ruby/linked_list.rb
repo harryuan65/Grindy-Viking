@@ -51,4 +51,14 @@ class LinkedList
       puts "#{val} Not found!"
     end
   end
+
+  def middle_node
+    slow = fast = @head
+
+    while fast.next&.next
+      slow = slow.next
+      fast = fast.next.next
+    end
+    slow
+  end
 end
