@@ -89,7 +89,7 @@ S is at the middle point
 ```
 
 ## 問題2:   Detect Cycle in Linked List
-
+只要 F 可以繼續往下走2步，就一直走直到 S==F ，此時就是 cycle。
 ```plaintext
 SF
 (1) -> (2) -> (3) -> (4) -> (5) -> (6)

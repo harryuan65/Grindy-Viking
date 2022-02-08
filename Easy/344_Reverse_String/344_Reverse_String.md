@@ -28,4 +28,4 @@ def reverse_string(s)
 end
 ```
 
-![[submission ruby.png]]
+![[Coding/Easy/344_Reverse_String/images/submission ruby.png]]
