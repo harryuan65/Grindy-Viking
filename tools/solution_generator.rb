@@ -12,9 +12,8 @@ class SolutionGenerator
 
     summary = JSON.parse(File.read('tools/question_summary.json'))[topic]
     id, difficulty = summary.values_at('id', 'difficulty')
-    puts [id, difficulty, topic].join(' | ')
     root = File.join(difficulty, "#{id}.#{topic}")
-    # https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
     FolderGenerator.perform!(root)
     FileGenerator.perform!(File.join(root, 'solution.rb'))
     FileGenerator.perform!(File.join(root, "#{topic}.md")) do |f|
