@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    awesome_print (1.9.2)
     backport (1.1.2)
     benchmark (0.1.1)
     cgi (0.2.1)
@@ -79,6 +80,7 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
+  awesome_print (~> 1.9)
   erb
   rake
   rspec-core
