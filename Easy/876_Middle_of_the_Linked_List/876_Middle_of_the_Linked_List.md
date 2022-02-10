@@ -1,4 +1,4 @@
-#TwoPointers 
+#TwoPointers
 
 # 思路
 
@@ -49,9 +49,10 @@ end
 
 ![[Coding/Easy/876_Middle_of_the_Linked_List/images/submission.png]]
 
-
 ## 思路 2
+
 看了一下[這個](https://leetcode.com/problems/middle-of-the-linked-list/discuss/348749/Simple-Ruby-solution)
+
 ```ruby
 def middle_node(head)
     slow = fast = head
@@ -64,15 +65,18 @@ end
 ```
 
 ![[黑人問號.png]]
+
 <iframe src="https://iq.opengenus.org/fast-and-slow-pointer-technique/" width=800 height=600/>
 ## Floyd’s Cycle Detection Algorithm
 又稱為 `tortoise and hare algorithm`。
 
 使用 slow, fast 兩個 pointer 來決定「有向」資料結構的一些特性，例如：
+
 - 檢查 graph、linked list 中是否含有循環
 - 找到 linked list 正中間的點（更有效率）
 
-## 問題1: Middle of the linked list
+## 問題 1: Middle of the linked list
+
 也剛好是本題。我上面的解法就是 brute force，因為我先 run N 一遍去找總共多少個 node ，再從頭走 N/2 去找中間點。
 
 ```plaintext
@@ -88,8 +92,23 @@ SF
 S is at the middle point
 ```
 
-## 問題2:   Detect Cycle in Linked List
-只要 F 可以繼續往下走2步，就一直走直到 S==F ，此時就是 cycle。
+稍微簡化了一下就變成：
+
+```ruby
+def middle_node(head)
+    slow = fast = head
+    while fast.next&.next
+        slow = slow.next
+        fast = fast.next.next
+    end
+    slow
+end
+```
+
+## 問題 2: Detect Cycle in Linked List
+
+只要 F 可以繼續往下走 2 步，就一直走直到 `S==F` ，此時就是 cycle。
+
 ```plaintext
 SF
 (1) -> (2) -> (3) -> (4) -> (5) -> (6)
@@ -100,7 +119,7 @@ SF
                S             F
 (1) -> (2) -> (3) -> (4) -> (5) -> (6)
                ↑____________________⌟
-               F      S             
+               F      S
 (1) -> (2) -> (3) -> (4) -> (5) -> (6)
                ↑____________________⌟
                             SF

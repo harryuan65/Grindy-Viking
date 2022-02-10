@@ -4,8 +4,8 @@
 - [[278-FirstBadVersion]]
 - [[704-BinarySearch]]
 
-
 ## Two Pointers
+
 - [[977_Squares_of_a_Sorted_Array]]
 - [[189-RotateArray]]
 - [[283_Move_Zeroes]]
@@ -13,4 +13,4 @@
 - [[344_Reverse_String]]
 - [[557_Reverse_Words_in_a_String_III]]
 - [[876_Middle_of_the_Linked_List]]
-- 
+-

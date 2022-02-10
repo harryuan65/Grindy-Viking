@@ -8,6 +8,7 @@
 如果比 nums[middle] 小，就往 0..middle-1 去找
 如果比 nums[middle] 大，就往 middle..-1 去找
 ![[BinarySearch-Found.svg]]
+![[BinartSearcg-NotFound.svg]]
 
 ```ruby
 def binary_search(nums, si, ei, target)
