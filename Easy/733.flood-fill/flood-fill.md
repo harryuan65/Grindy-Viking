@@ -1,4 +1,5 @@
-#QuestionCategory??
+#BFS
+#DFS
 
 # 思路
 
@@ -7,7 +8,7 @@
 <iframe src="https://leetcode.com/problems/flood-fill/" width=600 height=400></iframe>
 ```
 
-有個很機車的地方，就是他會塗一樣的顏色XD 害我 time out
+有個我沒注意到很機車的地方，就是他會塗一樣的顏色 XD 害我 time out
 `return image if image[sr][sc] == new_color` 一定要 handle。
 
 ```ruby
@@ -30,6 +31,5 @@ def flood_fill(image, sr, sc, new_color)
   image
 end
 ```
-
 
 ![[Coding/Easy/733.flood-fill/images/submission.png]]
