@@ -177,3 +177,7 @@ m = 4
 c = 4
 Done
 ```
+
+
+稍微看了下，其實這個好像叫做「kadane-algorithm」。
+https://shubo.io/maximum-subarray-problem-kadane-algorithm/
