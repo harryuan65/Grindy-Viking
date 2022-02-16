@@ -67,7 +67,7 @@ end
 ```
 
 
-![[submission1.png]]
+![[Coding/Easy/53.maximum-subarray/images/submission1.png]]
 
 
 後來發現我不需要放 e 到 max 檢查的 array 裏面，因為我已經把 current_max 設成 e 了。

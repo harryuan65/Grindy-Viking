@@ -24,3 +24,6 @@ Metrics/PerceivedComplexity:
 
 Metrics/CyclomaticComplexity:
   Enabled: false
+
+Style/Semicolon:
+  Enabled: false

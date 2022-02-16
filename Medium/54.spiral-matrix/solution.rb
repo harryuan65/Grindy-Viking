@@ -1,41 +1,28 @@
-# 1 0
 # @param {Integer[][]} matrix
 # @return {Integer[]}
 def spiral_order(matrix)
-  i = j = 0
-  c = 0
   n = matrix.size
   m = matrix[0].size
+  return matrix[0][0] if n == m && m == 1
+
   visited = n.times.map { m.times.map { false } }
-  r = []
+
+  i = j = 0
+  visited[0][0] = true
+  c = 1
+  r = [matrix[0][0]]
   while c < n * m
-    while !visited[i][j] && j < m - 1
-      puts "right #{matrix[i][j]}"
-      visited[i][j] = true
-      r.push(matrix[i][j])
-      c += 1
-      j += 1
+    while j < m - 1 && !visited[i][j + 1]
+      visited[i][j + 1] = true; r.push(matrix[i][j + 1]); j += 1; c += 1;
     end
-    while !visited[i][j] && i < n - 1
-      puts "down #{matrix[i][j]}"
-      visited[i][j] = true
-      r.push(matrix[i][j])
-      c += 1
-      i += 1
+    while i < n - 1 && !visited[i + 1][j]
+      visited[i + 1][j] = true; r.push(matrix[i + 1][j]); i += 1; c += 1;
     end
-    while !visited[i][j] && j.positive?
-      puts "left #{matrix[i][j]}"
-      visited[i][j] = true
-      r.push(matrix[i][j])
-      c += 1
-      j -= 1
+    while j.positive? && !visited[i][j - 1]
+      visited[i][j - 1] = true; r.push(matrix[i][j - 1]); j -= 1; c += 1;
     end
-    while !visited[i][j] && i.positive?
-      puts "up #{matrix[i][j]}"
-      visited[i][j] = true
-      r.push(matrix[i][j])
-      c += 1
-      i -= 1
+    while i.positive? && !visited[i - 1][j]
+      visited[i - 1][j] = true; r.push(matrix[i - 1][j]); i -= 1; c += 1;
     end
   end
   r
