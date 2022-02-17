@@ -7,7 +7,7 @@
 <iframe src="https://leetcode.com/problems/maximum-subarray/" width=600 height=400></iframe>
 ```
 
-其實說真的一開始還真的想不到。偷看了一下提示發現說 $O(n)$ 可以解決。
+看了一下提示發現說 $O(n)$ 可以解決。
 
 ```plaintext
 m is max 全域最大值

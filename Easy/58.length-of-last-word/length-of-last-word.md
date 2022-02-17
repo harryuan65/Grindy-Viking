@@ -34,9 +34,11 @@ def length_of_last_word(s)
 end
 ```
 
+```
 Runtime: 127 ms, faster than 21.23% of Ruby online submissions for Length of Last Word.
 
 Memory Usage: 211.1 MB, less than 22.64% of Ruby online submissions for Length of Last Word.
+```
 
 還是實驗一下內建仔的方法
 ```ruby
