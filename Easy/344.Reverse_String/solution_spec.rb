@@ -2,13 +2,13 @@ require_relative './solution'
 
 TEST_CASES = [
   {
-    input: [],
-    output: 0
+    input: 'Hello World',
+    output: 'dlroW olleH'
   },
   {
-    input: [],
-    output: 0
-  }
+    input: 'Hello World',
+    output: 'dlroW olleH'
+  },
 ].freeze
 
 RSpec.describe '#solution' do
@@ -16,7 +16,8 @@ RSpec.describe '#solution' do
     case tc
     in { input: input, output: output}
       it "#{input}  =>  #{output}" do
-        # expect(___).to eq(output)
+        expect { reverse_string(input) }
+          .to change { input }.from(input).to(output)
       end
     end
   end

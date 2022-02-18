@@ -28,4 +28,9 @@ def reverse_string(s)
 end
 ```
 
-![[Coding/Easy/344_Reverse_String/images/submission ruby.png]]
+![[Coding/Easy/344.Reverse_String/images/submission ruby.png]]
+
+```cpp
+
+```
+![[Pasted image 20220218103803.png]]
