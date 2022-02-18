@@ -31,6 +31,39 @@ end
 ![[Coding/Easy/344.Reverse_String/images/submission ruby.png]]
 
 ```cpp
+class Solution {
+   public:
+    void solution(vector<char>& s) {
+        int ei = s.size() - 1;
+        int si = 0;
 
+        while (si < ei) {
+            char tmp = s[si];
+            s[si] = s[ei];
+            s[ei] = tmp;
+            si++;
+            ei--;
+        }
+    }
+};
 ```
-![[Pasted image 20220218103803.png]]
+
+![[cpp.png]]
+
+```rust
+impl Solution {
+    pub fn reverse_string(s: &mut Vec<char>) {
+        let mut e_i: usize = s.len() - 1;
+        let mut s_i = 0usize;
+        while s_i < e_i {
+            let tmp: char = s[s_i];
+            s[s_i] = s[e_i];
+            s[e_i] = tmp;
+            s_i+=1;
+            e_i-=1;
+        }
+    }
+}
+```
+
+![[rust.png]]
