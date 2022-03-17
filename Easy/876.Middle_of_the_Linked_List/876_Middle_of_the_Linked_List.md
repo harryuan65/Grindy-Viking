@@ -48,7 +48,7 @@ end
 有點慢，有空來看其他人怎做的。
 
 ![[Coding/Easy/876_Middle_of_the_Linked_List/images/submission.png]]
-
+![[CS/Coding/Easy/876.Middle_of_the_Linked_List/images/submission.png]]
 ## 思路 2
 
 看了一下[這個](https://leetcode.com/problems/middle-of-the-linked-list/discuss/348749/Simple-Ruby-solution)

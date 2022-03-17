@@ -56,4 +56,4 @@ def area_of_island(visited, grid, r, c)
 end
 ```
 
-![[Coding/Medium/695.max-area-of-island/images/submission.png]]
+![[CS/Coding/Medium/695.max-area-of-island/images/submission.png]]

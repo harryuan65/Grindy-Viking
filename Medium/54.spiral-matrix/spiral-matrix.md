@@ -41,4 +41,4 @@ end
 設定起始點 visited 陣列，初始化 0,0 的值。
 先 peek 下一個看，加到訪問過，再移動到下一個
 
-![[Coding/Medium/54.spiral-matrix/images/submission1.png]]
+![[CS/Coding/Medium/54.spiral-matrix/images/submission1.png]]

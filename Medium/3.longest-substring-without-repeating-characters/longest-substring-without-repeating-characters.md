@@ -82,4 +82,4 @@ def length_of_longest_substring(s)
 end
 ```
 
-![[Coding/Medium/3.longest-substring-without-repeating-characters/images/submission.png]]
+![[CS/Coding/Medium/3.longest-substring-without-repeating-characters/images/submission.png]]

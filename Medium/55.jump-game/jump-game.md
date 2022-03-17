@@ -73,7 +73,7 @@ end
 
 乾，怎麼這麼慢？不是已經 O(n) ?
 
-![[Coding/Medium/55.jump-game/images/submission.png]]
+![[CS/Coding/Medium/55.jump-game/images/submission.png]]
 
 
 

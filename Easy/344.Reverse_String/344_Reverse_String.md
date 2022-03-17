@@ -28,7 +28,7 @@ def reverse_string(s)
 end
 ```
 
-![[Coding/Easy/344.Reverse_String/images/submission ruby.png]]
+![[CS/Coding/Easy/344.Reverse_String/images/submission ruby.png]]
 
 ```cpp
 class Solution {

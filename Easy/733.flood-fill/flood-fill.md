@@ -32,4 +32,4 @@ def flood_fill(image, sr, sc, new_color)
 end
 ```
 
-![[Coding/Easy/733.flood-fill/images/submission.png]]
+![[CS/Coding/Easy/733.flood-fill/images/submission.png]]

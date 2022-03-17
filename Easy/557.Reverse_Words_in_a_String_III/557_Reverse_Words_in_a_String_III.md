@@ -57,7 +57,7 @@ def reverse_words(s)
 end
 ```
 
-![[Coding/Easy/557_Reverse_Words_in_a_String_III/images/submission.png]]
+![[CS/Coding/Easy/557.Reverse_Words_in_a_String_III/images/submission.png]]
 
 Attemp2
 想說之前都被騙說要 two pointer，這次也看看邊 iterate，找到再去反轉。
@@ -90,3 +90,67 @@ def reverse_words(s)
 end
 ```
 ![[submission2.png]]
+
+換一個方法，也換成 Rust 試試看：
+```plaintext
+lets go
+      ^ 從這邊開始，如果不是空白就開始 push 進去某個地方
+      ^[o]
+     ^ [og]
+    ^  空白，換下一個 vector (word_index+=1)
+   ^   [s] 
+  ^    [st]
+ ^     [ste]
+^      [stel]
+
+最後會得到
+[["o", "g"], ["s", "t", "e", "l"]]
+要反過來 iterate 並且 join 起來。
+res = "".to_owned()
+["s", "t", "e", "l"] => "stel", res.push_str("stel"), 不是最後 res.push_str(" ")
+["o", "g"] => "og", res.push_str("og")
+```
+
+```rust
+fn reverse_words(s: String) -> String {
+    let sv: Vec<char> = s.chars().collect();
+    let mut words: Vec<Vec<char>> = vec![];
+    let mut word_index = 0usize;
+    for i in (0..sv.len()).rev() {
+        if sv[i] != ' ' {
+            if words.len() <= word_index {
+                words.push(vec![sv[i]]);
+            } else {
+                words[word_index].push(sv[i]);
+            }
+        } else if sv[i] == ' ' {
+            word_index += 1;
+        }
+    }
+    let mut res = "".to_string().to_owned();
+    for index in (0..=word_index).rev() {
+        let word = words[index].iter().collect::<String>();
+        res.push_str(&word);
+        if index > 0 {
+            res.push_str(" ");
+        }
+    }
+    res
+}
+```
+
+![[557_Reverse_Words_in_a_String_III Rust.png]]
+
+```rust
+ let words: Vec<&str> = s.split(" ").collect();
+    let mut fin = String::new();
+    for (i, word) in words.iter().enumerate() {
+        fin.push_str(&word.chars().rev().collect::<String>());
+        if i < words.len() - 1 {
+            fin.push_str(" ");
+        }
+    }
+    fin
+```
+
+![[557_Reverse_Words_in_a_String_III Rust2.png]]

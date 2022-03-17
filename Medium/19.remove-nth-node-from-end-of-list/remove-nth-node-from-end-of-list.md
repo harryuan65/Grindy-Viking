@@ -57,5 +57,5 @@ def remove_nth_from_end(head, n)
 end
 ```
 
-![[Coding/Medium/19.remove-nth-node-from-end-of-list/images/submission ruby.png]]
+![[CS/Coding/Medium/19.remove-nth-node-from-end-of-list/images/submission ruby.png]]
 ![[post submission.png]]
