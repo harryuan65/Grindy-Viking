@@ -1,5 +1,7 @@
 AllCops:
   NewCops: disable
+  Exclude:
+    - "**/solution.rb"
 
 Metrics/AbcSize:
   Enabled: false
