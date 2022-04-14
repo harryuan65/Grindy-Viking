@@ -8,17 +8,23 @@
 參考[這個影片](https://www.youtube.com/watch?v=BHr381Guz3Y&ab_channel=NeetCode)
 
 ```ruby
-[1,2,3,4,5]
-k = 2
-
-# 1. 利用 Two pointer，直接把整個 Array 反轉
-[5,4,3,2,1]
-# 2. 針對前面 k 項目 （0 ~ k-1 項）去反轉
-[4,5,3,2,1]
-# 3. 針對後面 n - k 項目 （k ~ n-1 項）去反轉
-[4,5,1,2,3]
-# 4. Done.
+Input
+  nums = [1,2,3,4,5]
+  k = 2
+Output
+  [4,5,1,2,3]
 ```
+
+解法
+1. 利用 Two pointer，直接把整個 Array 反轉
+2. 針對前面 k 項目 （0 ~ k-1 項）去反轉
+3. 針對後面 n - k 項目 （k ~ n-1 項）去反轉
+
+- [5,4,3,2,1]
+- [4,5,3,2,1]
+- [4,5,1,2,3]
+
+@import "images/submission.png"
 
 ```ruby
 def rotate(nums, k)
