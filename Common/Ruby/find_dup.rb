@@ -6,9 +6,10 @@
 def find_dup(nums)
   counts = Hash.new(0)
   nums.each do |num|
-    return num if counts[num].positive?
+    seen = counts[num]
+    return num if seen.positive?
 
-    counts[num] += 1
+    counts[num] = seen + 1
   end
   nil
 end
