@@ -10,5 +10,5 @@ gem 'rspec-support'
 gem 'rufo'
 gem 'solargraph'
 gem 'sorbet-static-and-runtime', '~> 0.5.9531'
-
-gem "awesome_print", "~> 1.9"
+gem 'pry'
+gem 'awesome_print', '~> 1.9'

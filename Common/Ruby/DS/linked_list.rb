@@ -4,7 +4,7 @@
 class ListNode
   attr_accessor :val, :next
 
-  def initialize(val, next_ptr = nil)
+  def initialize(val = 0, next_ptr = nil)
     @val = val
     @next = next_ptr
   end
