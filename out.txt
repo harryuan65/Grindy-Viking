@@ -1,0 +1,8 @@
+
+#solution
+  test case #0
+  test case #1
+
+Finished in 0.02558 seconds (files took 0.04908 seconds to load)
+2 examples, 0 failures
+
