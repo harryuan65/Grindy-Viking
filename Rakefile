@@ -1,11 +1,11 @@
-require 'fileutils'
-require 'erb'
-require_relative 'tools/solution_generator'
+require "fileutils"
+require "erb"
+require_relative "tools/solution_generator"
 
-desc 'Generate a file'
+desc "Generate a file"
 task :solution, [:url] do |_t, args|
   unless args[:url]
-    puts 'Missing args'
+    puts "Missing args"
     exit
   end
 
@@ -24,10 +24,10 @@ task :check, [:id] do |_t, args|
     break
   end
   if path.nil?
-    puts 'Not found'
+    puts "Not found"
     exit
   end
 
-  spec = File.join(path, 'solution_spec.rb')
-  puts `bundle exec rspec #{spec}`
+  spec = File.join(path, "solution_spec.rb")
+  puts `bundle exec rspec #{spec} --color`
 end
