@@ -43,7 +43,7 @@ RSpec.describe "#solution" do
     case tc
     in { input1: input1, input2: input2, output: output}
       it "test case ##{i}" do
-        expect(is_subsequence(input1, input2)).to eq(output), "expected #{input1} to #{output ? "be" : "not be"} be a substring of #{input2}"
+        expect(is_subsequence(input1, input2)).to eq(output), "expected \"#{input1}\" to #{output ? "be" : "not be"} a substring of \"#{input2}\""
       end
     end
   end
