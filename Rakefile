@@ -29,5 +29,5 @@ task :check, [:id] do |_t, args|
   end
 
   spec = File.join(path, "solution_spec.rb")
-  puts `bundle exec rspec #{spec} --color`
+  exec "bundle exec rspec #{spec}"
 end
