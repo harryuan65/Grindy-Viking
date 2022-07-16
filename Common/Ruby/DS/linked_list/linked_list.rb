@@ -8,6 +8,8 @@ class LinkedList
     @head = head
   end
 
+  # Time: O(n)
+  # Space: O(1)
   def insert(val)
     if @head
       node = head
@@ -18,6 +20,8 @@ class LinkedList
     end
   end
 
+  # Time: O(n)
+  # Space: O(1)
   def display
     node = head
     while node
@@ -27,6 +31,8 @@ class LinkedList
     puts
   end
 
+  # Time: O(n)
+  # Space: O(1)
   def delete(val)
     if @head.val == val
       @head = @head.next
@@ -42,6 +48,9 @@ class LinkedList
     end
   end
 
+  # Time: O(n)
+  # Space: O(1)
+  # If n.even?, returns the n/2th node
   def middle_node
     slow = fast = @head
 
