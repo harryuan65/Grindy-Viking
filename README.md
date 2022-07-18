@@ -1,10 +1,6 @@
 # Grindy Viking
 
-Me grinding some LeetCode in order to fight the dragon.
-
-```bash
-bundle install
-```
+This repo is just me grinding some LeetCode in order to fight the dragon. For the repo name: I was playing Valheim with some friends.
 
 ## Generate Code
 
