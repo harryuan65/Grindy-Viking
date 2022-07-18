@@ -97,6 +97,7 @@ DEPENDENCIES
   rufo
   solargraph
   sorbet-static-and-runtime (~> 0.5.9531)
+  thor
 
 BUNDLED WITH
    2.2.32
