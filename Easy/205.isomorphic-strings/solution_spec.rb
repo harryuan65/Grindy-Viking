@@ -1,4 +1,5 @@
-require_relative "./solution"
+FILE_NAME = "solution2.rb"
+require_relative FILE_NAME
 
 TEST_CASES = [
   {
@@ -18,7 +19,7 @@ TEST_CASES = [
   }
 ].freeze
 
-RSpec.describe "#solution" do
+RSpec.describe FILE_NAME do
   TEST_CASES.each_with_index do |tc, i|
     case tc
     in { input1: input1, input2: input2, output: output}
