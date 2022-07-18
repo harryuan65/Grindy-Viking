@@ -4,7 +4,21 @@ Me grinding some LeetCode in order to fight the dragon.
 
 ```bash
 bundle install
-rake "solution[leetcode_url]"
+```
+
+## Generate Code
+
+This repo uses [Katagen](https://github.com/harryuan65/Katagen) to generate each coding file from template.
+## Running Tests
+
+This repo uses `thor` to run test.
+
+```bash
+./coding.rb spec <id>
+./coding.rb spec 9
+# will run command: 
+#   bundle exec rspec full_path_to/easy/9.palindrome-number/solution_spec.rb
+# if this file exists
 ```
 
 
