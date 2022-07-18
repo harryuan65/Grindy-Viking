@@ -1,6 +1,8 @@
-# frozen_string_literal: true
+#!/usr/bin/env ruby
 
-class Coding < Thor
+require "thor"
+
+class Command < Thor
   desc "spec <id>", "Run spec for question"
   def spec(id)
     path = nil
@@ -19,7 +21,8 @@ class Coding < Thor
     end
 
     spec = File.join(path, "solution_spec.rb")
-    puts __dir__
-    # exec "bundle exec rspec #{spec}"
+    exec "bundle exec rspec #{spec}"
   end
 end
+
+Command.start
