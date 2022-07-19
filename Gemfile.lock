@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/harryuan65/Katagen
+  revision: d7f7ea7ac1a4afe27a8d645b1d91b00b5165adb6
+  specs:
+    katagen (0.1.0)
+      erb (~> 2.2.0)
+      thor (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -89,6 +97,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print (~> 1.9)
   erb
+  katagen!
   pry
   rake
   rspec-core
