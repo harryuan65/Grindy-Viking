@@ -1,11 +1,6 @@
-#QuestionCategory??
+##### tags: `SlidingWindow`,`HashTable`, `String`
 
 # 思路
-
-```ad-note
-[題目](https://leetcode.com/problems/longest-substring-without-repeating-characters)
-<iframe src="https://leetcode.com/problems/longest-substring-without-repeating-characters" width=600 height=400></iframe>
-```
 
 ```plaintext
 p=-1  
@@ -81,5 +76,3 @@ def length_of_longest_substring(s)
     max
 end
 ```
-
-![[CS/Coding/Medium/3.longest-substring-without-repeating-characters/images/submission.png]]
