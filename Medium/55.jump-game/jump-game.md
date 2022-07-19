@@ -1,11 +1,6 @@
-#QuestionCategory??
+##### tags: `Array`, `DynamicProgramming`, `Greedy`r
 
 # 思路
-
-```ad-note
-[題目](https://leetcode.com/problems/jump-game/)
-<iframe src="https://leetcode.com/problems/jump-game/" width=600 height=400></iframe>
-```
 
 ```plaintext
 reachable_i = -1
@@ -70,11 +65,6 @@ def can_jump(nums)
   reachable_from[0]
 end
 ```
-
-乾，怎麼這麼慢？不是已經 O(n) ?
-
-![[CS/Coding/Medium/55.jump-game/images/submission.png]]
-
 
 
 ```rust
