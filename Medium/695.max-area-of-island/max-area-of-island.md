@@ -1,5 +1,4 @@
-#BFS
-#DFS
+###### tags: `BFS`, `DFS`
 
 # 思路
 
