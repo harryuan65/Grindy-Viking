@@ -55,8 +55,6 @@ $(n-1) + (n-2) + ... + 1= \dfrac{(1 + (n - 1)) * (n - 1)}{2} = \dfrac{n^{2} - n}
 
 去年過了，但今年他們換 test case 就 gg 了。
 
-![[01 submission Ruby.png]]
-
 我 TM 改成 Rust 就過了
 
 ```rust
@@ -74,8 +72,6 @@ impl Solution {
     }
 }
 ```
-
-![[02 submission Rust.png]]
 
 因為一定有一個解，外面去不了但是 rust 堅持要解釋清楚，那時候不確定怎麼做就亂回傳一個東西 XD。看人家是這樣寫：
 
@@ -119,9 +115,6 @@ end
 ```
 
 
-![[03 submission OpRuby.png]]
-
-
 順便學習了一下 Rust 的 HashMap 怎麼用 XD。
 ```rust
 use std::collections::HashMap;
@@ -142,5 +135,3 @@ impl Solution {
     }
 }
 ```
-
-![[04 submission OpRust.png]]
