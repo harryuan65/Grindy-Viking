@@ -1,4 +1,4 @@
-#QuestionCategory??
+##### tags: `Array`, `BinarySearch`, `TwoPointers`
 
 # 思路
 
@@ -55,5 +55,3 @@ def two_sum(numbers, target)
     end
 end
 ```
-
-![[CS/Coding/Medium/167.Two_Sum_II_-_Input_Array_Is_Sorted/images/submission.png]]
