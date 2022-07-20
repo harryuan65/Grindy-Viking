@@ -33,3 +33,7 @@ Style/Semicolon:
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
+
+Naming/FileName:
+  Exclude:
+    - Gemfile
