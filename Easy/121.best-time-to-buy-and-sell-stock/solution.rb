@@ -1,5 +1,5 @@
 # timestamp: 2022-07-19T15:34:49+08:00
-# title: easy/121.best-time-to-buy-and-sell-stock
+# question: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 # train of thought
 <<~THOUGHT
