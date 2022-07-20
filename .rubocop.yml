@@ -1,39 +1,7 @@
 AllCops:
   NewCops: disable
-  Exclude:
-    - "**/solution.rb"
-
-Metrics/AbcSize:
-  Enabled: false
-
-Naming/MethodParameterName:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/MixinUsage:
-  Enabled: false
-
-Metrics/MethodLength:
-  Enabled: false
-
-Style/TrailingCommaInArrayLiteral:
-  Enabled: false
-
-Metrics/PerceivedComplexity:
-  Enabled: false
-
-Metrics/CyclomaticComplexity:
-  Enabled: false
-
-Style/Semicolon:
-  Enabled: false
+  DisabledByDefault: true
 
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
-
-Naming/FileName:
-  Exclude:
-    - Gemfile
