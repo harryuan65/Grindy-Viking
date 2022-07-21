@@ -1,21 +1,8 @@
 #BinarySearch
 
-```ad-note
-title: FirstBadVersion
-### Input
-
-- n: Integer
-
 n 是總共有幾個版本，但沒講個版本哪些是 good or bad，只能透過題目提供的 `is_bad_version(n)` 查詢。
 並要求要呼叫最少次的 `is_bad_version(n)`。
 當有一個版本是 bad，之後的所有版本都是壞掉的。要找第一個壞掉的版本。
-
-### Output
-
-第一個壞掉的版本號碼
-```
-
-![[278-FirstBadVersion.svg]]
 
 ```ruby
 def first_bad_version(n)
