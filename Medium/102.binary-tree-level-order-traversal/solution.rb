@@ -7,15 +7,8 @@ TRAIN_OF_THOUGHT = <<DOC.freeze
 DOC
 
 # code goes here
-# Definition for a binary tree node.
-class TreeNode
-  attr_accessor :val, :left, :right
-  def initialize(val = 0, left = nil, right = nil)
-    @val = val
-    @left = left
-    @right = right
-  end
-end
+require_relative "tree_node"
+
 # @param {TreeNode} root
 # @return {Integer[][]}
 def level_order(root)
