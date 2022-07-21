@@ -1,4 +1,4 @@
-FILE_NAME = "solution.rb".freeze
+FILE_NAME = "solution2.rb".freeze
 require_relative FILE_NAME
 
 TEST_CASES = [
@@ -33,6 +33,10 @@ TEST_CASES = [
       root
     end,
     output: [1,2,3,6,7,11,14,4,8,12,5,9,13,10]
+  },
+  {
+    input: nil,
+    output: []
   }
 ].freeze
 
