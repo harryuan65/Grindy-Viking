@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e">
+    <diagram id="hjsdSuonLF5NlVJBbi4d" name="Page-1">
+        <mxGraphModel dx="799" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="55" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="300" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="255" y="300" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="410" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="8" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="420" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="check left 1 &amp;lt; 5&lt;br&gt;check right 7 &amp;gt; 5&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="60" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="max = MAX&lt;br&gt;min = 5&lt;br&gt;&lt;br&gt;min valid&lt;br&gt;check root &amp;gt; 5&lt;br&gt;check left 6 &amp;gt; 5&lt;br&gt;check right 8 &amp;gt; 5&amp;nbsp;&lt;br&gt;&lt;br&gt;max valid&lt;br&gt;check root &amp;lt; MAX&lt;br&gt;check left &amp;lt; MAX&lt;br&gt;check right &amp;lt; MAX&lt;br&gt;&lt;br&gt;root valid&lt;br&gt;check left &amp;lt; 7&lt;br&gt;check right &amp;gt; 7&lt;br&gt;&lt;br&gt;left valid&lt;br&gt;call(left)&lt;br&gt;&lt;br&gt;right valid&lt;br&gt;call(right)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="90" width="110" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="left=nil and right=nil&lt;br&gt;=&amp;gt; true" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="350" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
