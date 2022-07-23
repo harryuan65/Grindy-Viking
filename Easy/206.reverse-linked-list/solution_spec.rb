@@ -1,4 +1,4 @@
-require_relative "./solution"
+require_relative "./solution4_best"
 require_relative "./test_cases"
 
 RSpec.describe "#solution" do
