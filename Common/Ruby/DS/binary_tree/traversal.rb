@@ -15,38 +15,50 @@ root.right = Node.new(3, Node.new(4), Node.new(5))
 #   2  3
 #      4  5
 
-# @param [Node] node
+# Root -> L -> R
 def pre_order(node)
+  values = []
   if node.left.nil? && node.right.nil?
-    print node.val, " "
-    return
+    values << node.val
+    return values
   end
 
-  print node.val, " "
-  pre_order(node.left)
-  pre_order(node.right)
+  values << node.val
+  values << pre_order(node.left)
+  values << pre_order(node.right)
+
+  values
 end
 
+# L -> Root -> R
+# 對 BST 做 inorder 就是由小到大依序遍歷。
 def in_order(node)
+  values = []
   if node.left.nil? && node.right.nil?
-    print node.val, " "
-    return
+    values << node.val
+    return values
   end
 
-  pre_order(node.left)
-  print node.val, " "
-  pre_order(node.right)
+  values << pre_order(node.left)
+  values << node.val
+  values << pre_order(node.right)
+
+  values
 end
 
+# L -> R -> Root
 def post_order(node)
+  values = []
   if node.left.nil? && node.right.nil?
-    print node.val, " "
-    return
+    values << node.val
+    return values
   end
 
-  pre_order(node.left)
-  pre_order(node.right)
-  print node.val, " "
+  values << pre_order(node.left)
+  values << pre_order(node.right)
+  values << node.val
+
+  values
 end
 
 def level_order(root)
@@ -58,21 +70,6 @@ def level_order(root)
     queue << node.left if node.left
     queue << node.right if node.right
   end
-  print values.join(", ")
+
+  values
 end
-
-print "pre_order:"
-pre_order(root)
-puts
-
-print "in_order:"
-in_order(root)
-puts
-
-print "post_order:"
-post_order(root)
-puts
-
-print "level_order:"
-level_order(root)
-puts
