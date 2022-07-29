@@ -1,6 +1,6 @@
 # Grindy Viking
 
-This repo is just me grinding some LeetCode in order to fight the dragon. For the repo name: I was playing Valheim with some friends.
+This repo is just me grinding some LeetCode.
 
 ## Generate Code
 
