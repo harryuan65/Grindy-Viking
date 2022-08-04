@@ -39,9 +39,9 @@ def in_order(node)
     return values
   end
 
-  values << pre_order(node.left)
+  values << in_order(node.left)
   values << node.val
-  values << pre_order(node.right)
+  values << in_order(node.right)
 
   values
 end
@@ -54,8 +54,8 @@ def post_order(node)
     return values
   end
 
-  values << pre_order(node.left)
-  values << pre_order(node.right)
+  values << post_order(node.left)
+  values << post_order(node.right)
   values << node.val
 
   values
