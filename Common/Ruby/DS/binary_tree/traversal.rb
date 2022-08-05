@@ -11,11 +11,13 @@ root = Node.new(1)
 root.left = Node.new(2)
 root.right = Node.new(3, Node.new(4), Node.new(5))
 
-#     1
-#   2  3
-#      4  5
+#       6
+#     4    8
+#   2  5  7  9
+# 1  3
 
 # Root -> L -> R
+# 642135879
 def pre_order(node)
   values = []
   if node.left.nil? && node.right.nil?
