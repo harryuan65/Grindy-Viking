@@ -2,6 +2,7 @@ require_relative "../../../utils/array"
 
 def quicksort(a, s=0, e=a.size-1)
   stack = [[s, e]]
+  puts "\t init stack: #{highlighted_array(stack, {0 => 33})}"
   while stack.any?
     first, last = stack.pop
     if first < last
