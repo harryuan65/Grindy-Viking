@@ -12,10 +12,9 @@ def partition(a, first, last)
     return first
   end
 
-  puts "partition(#{first}, #{last})"
+  puts "==========partition(#{first}, #{last})=========="
   puts "\t #{highlighted_array(a, {first=>35,first+1=>31, last=>31})}"
-  puts "\t #{highlight_pointers(a, first, last)}"
-  puts "\t pivot is a[#{first}]=#{a[first]}"
+  puts "\t #{highlight_pointers(a, first+1, last)}"
 
   pivot = a[first]
   i, j = first+1, last
@@ -29,14 +28,16 @@ def partition(a, first, last)
       j-=1
     end
 
-    puts "\t #{highlight_pointers(a, i, j)}"
 
     if i < j
       puts "\t #{highlighted_array(a, {first=>35,i=>33, j=>33})}"
+      puts "\t #{highlight_pointers(a, i, j)}"
       puts "\t swap [#{i}], [#{j}] = swap #{a[i]} #{a[j]}"
       a[i], a[j] = a[j], a[i]
       puts "\t #{highlighted_array(a, {first=>35,i=>36, j=>36})}"
     else
+      puts "\t #{highlighted_array(a, {first=>33, j =>33})}"
+      puts "\t #{highlight_pointers(a, i, j)}"
       puts "\t swap pivot [#{first}] [#{j}] = swap pivot #{a[first]} #{a[j]}"
       a[first], a[j] = a[j], a[first] # swap pivot with a[i]
       puts "\t #{highlighted_array(a, {first=>92, j =>92})}"
@@ -60,7 +61,9 @@ end
 
 def highlight_pointers(a, i, j)
   pointers = a.map.with_index do |e, ii|
-    if ii == i
+    if ii == i && ii == j
+      "\e[1mij\e[0m"
+    elsif ii == i
       "\e[1mi\e[0m"
     elsif ii == j
       "\e[1mj\e[0m"
