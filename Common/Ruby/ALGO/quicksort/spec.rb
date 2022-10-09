@@ -1,5 +1,7 @@
-# target = "quicksort"
-target = "quicksort_detailed"
+# target = "iterative/quicksort"
+# target = "iterative/quicksort_detailed"
+# target = "recursive/quicksort"
+target = "recursive/quicksort_detailed"
 
 require_relative "./#{target}"
 
@@ -23,7 +25,7 @@ DETAILED_TEST_CASES = [
 ]
 
 RSpec.describe method(:quicksort) do
-  test_cases = target == "quicksort_detailed" ? DETAILED_TEST_CASES : TEST_CASES
+  test_cases = target.match(/detailed/) ? DETAILED_TEST_CASES : TEST_CASES
   test_cases.each do |tc|
     it "sorts correctly(test cases:#{target})" do
       expect(subject[tc, 0, tc.size-1]).to eq(tc.sort)

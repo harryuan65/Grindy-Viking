@@ -1,10 +1,15 @@
 require_relative "../../../utils/array"
 
-def quicksort(a, first, last)
-  if first < last
-    p = partition(a, first, last)
-    quicksort(a, first, p-1)
-    quicksort(a, p+1, last)
+def quicksort(a, s=0, e=a.size-1)
+  stack = [[s, e]]
+  while stack.any?
+    first, last = stack.pop
+    if first < last
+      p = partition(a, first, last)
+      stack.push([first, p-1])
+      stack.push([p+1, last])
+    end
+    puts "\t stack: #{highlighted_array(stack, {0 => 33})}"
   end
   a
 end
