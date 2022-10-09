@@ -16,13 +16,11 @@ def partition(a, first, last)
   i, j = first+1, last
 
   loop do
-    while i < last
-      break if a[i] >= pivot
+    while a[i] < pivot && i < last
       i+=1
     end
 
-    while j > first
-      break if a[j] < pivot
+    while a[j] >= pivot && j > first
       j-=1
     end
 

@@ -16,16 +16,16 @@ def partition(a, first, last)
   puts "\t #{highlighted_array(a, {first=>35,first+1=>31, last=>31})}"
   puts "\t #{highlight_pointers(a, first, last)}"
   puts "\t pivot is a[#{first}]=#{a[first]}"
+
+  pivot = a[first]
   i, j = first+1, last
 
   loop do
-    while i < last
-      break if a[i] > a[first]
+    while a[i] < a[first] && i < last
       i+=1
     end
 
-    while j > first
-      break if a[j] < a[first]
+    while a[j] >= a[first] && j > first
       j-=1
     end
 
