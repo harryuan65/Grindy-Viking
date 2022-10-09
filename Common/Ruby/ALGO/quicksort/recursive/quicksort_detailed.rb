@@ -31,17 +31,18 @@ def partition(a, first, last)
 
     puts "\t #{highlight_pointers(a, i, j)}"
 
-    break if i >= j
-
-    puts "\t #{highlighted_array(a, {first=>35,i=>33, j=>33})}"
-    puts "\t swap [#{i}], [#{j}] = swap #{a[i]} #{a[j]}"
-    a[i], a[j] = a[j], a[i]
-    puts "\t #{highlighted_array(a, {first=>35,i=>36, j=>36})}"
+    if i < j
+      puts "\t #{highlighted_array(a, {first=>35,i=>33, j=>33})}"
+      puts "\t swap [#{i}], [#{j}] = swap #{a[i]} #{a[j]}"
+      a[i], a[j] = a[j], a[i]
+      puts "\t #{highlighted_array(a, {first=>35,i=>36, j=>36})}"
+    else
+      puts "\t swap pivot [#{first}] [#{j}] = swap pivot #{a[first]} #{a[j]}"
+      a[first], a[j] = a[j], a[first] # swap pivot with a[i]
+      puts "\t #{highlighted_array(a, {first=>92, j =>92})}"
+      break
+    end
   end
-
-  puts "\t swap pivot [#{first}] [#{j}] = swap pivot #{a[first]} #{a[j]}"
-  a[first], a[j] = a[j], a[first] # swap pivot with a[i]
-  puts "\t #{highlighted_array(a, {first=>92, j =>92})}"
 
   j
 end

@@ -1,4 +1,4 @@
-require_relative "./quicksort"
+require_relative "./quicksort_detailed"
 
 TEST_CASES = [
   [6, 2, 1, 4, 8, 7, 3, 5],

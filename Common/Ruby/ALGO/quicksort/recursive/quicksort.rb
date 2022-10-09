@@ -26,12 +26,13 @@ def partition(a, first, last)
       j-=1
     end
 
-    break if i >= j
-
-    a[i], a[j] = a[j], a[i]
+    if i < j
+      a[i], a[j] = a[j], a[i]
+    else
+      a[first], a[j] = a[j], a[first] # swap pivot with a[j]
+      break
+    end
   end
-
-  a[first], a[j] = a[j], a[first] # swap pivot with a[i]
 
   j
 end
