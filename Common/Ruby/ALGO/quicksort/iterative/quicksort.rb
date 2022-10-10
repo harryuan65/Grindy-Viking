@@ -20,11 +20,11 @@ def partition(a, first, last)
   i, j = first+1, last
 
   loop do
-    while a[i] < pivot && i < last
+    while a[i] <= pivot && i < last
       i+=1
     end
 
-    while a[j] >= pivot && j > first
+    while a[j] > pivot && j > first
       j-=1
     end
 
