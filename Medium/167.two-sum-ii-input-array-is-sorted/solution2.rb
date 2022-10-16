@@ -22,5 +22,3 @@ def two_sum(nums, target)
     end
   end
 end
-
-# oops sorted has cause index to misposition
