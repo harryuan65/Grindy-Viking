@@ -1,23 +1,58 @@
 #!/usr/bin/env ruby
 
-def spec(id)
+# @param [String] id
+#
+def spec(id_str)
+  id, div = parse_file_division(id_str)
+
+  path = find_dirname(id)
+
+  file = File.join(path, "solution_spec.rb")
+
+  exec "TESTEE=solution#{div}.rb bin/rspec #{file}"
+end
+
+#
+# Given id of a question, find the corresponding folder
+# @example
+#   1 => Easy/1.two_sum
+#
+# @param [String] id_str : integer string id
+#
+# @return [String] path to the directory.
+#
+def find_dirname(id_str)
   path = nil
   dir_names = %w[Easy Medium Hard]
   dir_names.each do |dir_name|
-    target = Dir.entries(dir_name).find { _1[/\A#{id}\./] }
+    target = Dir.entries(dir_name).find { _1[/\A#{id_str}\./] }
     next unless target
 
-    path = File.join(dir_name, target)
-    break
+    return File.join(dir_name, target)
   end
 
   if path.nil?
-    puts "Not found"
-    exit
+    abort "Not found"
   end
-
-  file = File.join(path, "solution_spec.rb")
-  exec "bin/rspec #{file}"
+end
+#
+# If given id strings:
+# - 1   gets parsed as id=1 div=nil
+# - 1:1 gets parsed as id=1 div=1
+# - 1:2 gets parsed as id=1 div=2
+# @param [String] id_str string args
+#
+# @return [Array(String, String)] id, division
+#
+def parse_file_division(id_str)
+  if(match = id_str.match(/(\d+):(\d+)/)&.to_a)
+    _, id, div = match
+    div = div.to_i > 1 ? div : nil
+  else
+    id = id_str
+    div = nil
+  end
+  [id, div]
 end
 
 if $0 == __FILE__
