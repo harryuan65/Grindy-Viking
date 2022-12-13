@@ -5,18 +5,23 @@ This repo is just me grinding some LeetCode.
 ## Generate Code
 
 This repo uses [Katagen](https://github.com/harryuan65/Katagen) to generate each coding file from template.
+
 ## Running Tests
 
-This repo uses `thor` to run test.
+This repo has a script to check solution (.rb).
 
 ```bash
-./coding.rb spec <id>
-./coding.rb spec 9
-# will run command: 
+bin/check <id>[:<variant>]
+bin/check 9
+
+# will run command:
 #   bundle exec rspec full_path_to/easy/9.palindrome-number/solution_spec.rb
 # if this file exists
-```
+# which tests "solution.rb"
 
+bin/check 9:2
+# will run the same command but testing "solution2.rb"
+```
 
 # Learning Resources
 

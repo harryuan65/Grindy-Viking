@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/harryuan65/Katagen
-  revision: 4d5a279a58a7e8025ee30f8040d80a31f6d22dec
+  revision: ebd2c7b9275bd8f6af1f4a6a845cf46165ba117f
   specs:
     katagen (0.1.0)
       erb (~> 2.2.0)
