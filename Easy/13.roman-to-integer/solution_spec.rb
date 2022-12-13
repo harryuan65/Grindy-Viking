@@ -1,33 +1,34 @@
-require_relative './solution'
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
+require_relative FILE_NAME
 
 TEST_CASES = [
   {
-    input: 'II',
+    input: "II",
     output: 2
   },
   {
-    input: 'III',
+    input: "III",
     output: 3
   },
   {
-    input: 'IV',
+    input: "IV",
     output: 4
   },
   {
-    input: 'XL',
+    input: "XL",
     output: 40
   },
   {
-    input: 'CMX',
+    input: "CMX",
     output: 910
   },
   {
-    input: 'CMXLIX',
+    input: "CMXLIX",
     output: 949
   },
 ].freeze
 
-RSpec.describe '#solution' do
+RSpec.describe FILE_NAME do
   TEST_CASES.each do |tc|
     case tc
     in { input: input, output: output}

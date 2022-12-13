@@ -1,7 +1,7 @@
 require_relative "./solution4_best"
 require_relative "./test_cases"
 
-RSpec.describe "#solution" do
+RSpec.describe FILE_NAME do
   TEST_CASES.each do |tc|
     case tc
     in { input: input, output: output}

@@ -1,4 +1,4 @@
-FILE_NAME = "solution.rb"
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
 require_relative FILE_NAME
 require_relative "../../Common/Ruby/DS/binary_tree/to_binary_search_tree.rb"
 

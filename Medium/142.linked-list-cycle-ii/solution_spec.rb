@@ -1,4 +1,8 @@
-require_relative "./solution"
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
+require_relative FILE_NAME
+
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
+require_relative FILE_NAME
 require_relative "../../Common/Ruby/DS/list_node/from_array"
 
 TEST_CASES = [
@@ -27,7 +31,7 @@ TEST_CASES = [
   end
 ].freeze
 
-RSpec.describe "#solution" do
+RSpec.describe FILE_NAME do
   TEST_CASES.each do |tc|
     case tc
     in { input: input, output: output}

@@ -1,4 +1,5 @@
-require_relative "./solution"
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
+require_relative FILE_NAME
 
 TEST_CASES = [
   begin

@@ -1,4 +1,4 @@
-FILE_NAME = (ENV["TESTEE"] || "solution.rb")
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
 require_relative FILE_NAME
 
 # input nums, k

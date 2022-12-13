@@ -1,4 +1,4 @@
-FILE_NAME = "solution2.rb".freeze
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
 require_relative FILE_NAME
 
 TEST_CASES = [
