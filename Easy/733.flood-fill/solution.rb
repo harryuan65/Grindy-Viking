@@ -1,4 +1,4 @@
-require 'awesome_print'
+require "awesome_print"
 # @param {Integer[][]} image
 # @param {Integer} sr
 # @param {Integer} sc
@@ -20,14 +20,14 @@ def flood_fill(image, sr, sc, new_color)
 end
 
 def print_answer(ans)
-  puts '================'
+  puts "================"
   ans.each do |arr|
     arr.each do |arr2|
       print arr2
     end
     puts
   end
-  puts '================'
+  puts "================"
 end
 
 print_answer(flood_fill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2))

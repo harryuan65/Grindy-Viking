@@ -1,5 +1,5 @@
-require_relative '../fib_iterative'
-require_relative '../sequence_data'
+require_relative "../fib_iterative"
+require_relative "../sequence_data"
 
 RSpec.describe method(:fib2) do
   ANS.each_with_index do |e, i|

@@ -3,5 +3,5 @@
 def length_of_last_word(s)
   return 1 unless s.size > 1
 
-  s.split(' ')[-1].strip.size
+  s.split(" ")[-1].strip.size
 end

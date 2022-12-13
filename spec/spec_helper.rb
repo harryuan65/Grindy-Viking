@@ -1,4 +1,4 @@
-Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each do |f|
+Dir[File.join(File.dirname(__FILE__), "support/**/*.rb")].each do |f|
   require f
   puts "loading #{f}"
 end

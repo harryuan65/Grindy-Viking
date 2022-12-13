@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'set'
+require "set"
 
-def solution(s = '')
+def solution(s = "")
   m = 0
   si = 0
   set = Set.new

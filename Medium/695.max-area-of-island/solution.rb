@@ -1,12 +1,12 @@
 def print_grid(grid)
-  puts '================'
+  puts "================"
   grid.each do |arr|
     arr.each do |arr2|
       print arr2
     end
     puts
   end
-  puts '================'
+  puts "================"
 end
 
 # @param {Integer[][]} grid

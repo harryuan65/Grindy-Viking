@@ -27,7 +27,7 @@ def search_insert(nums, target)
 end
 
 # --------------------------
-nums = gets.chomp.split(',').map(&:to_i)
+nums = gets.chomp.split(",").map(&:to_i)
 target = gets.chomp.to_i
 
 puts search_insert(nums, target)

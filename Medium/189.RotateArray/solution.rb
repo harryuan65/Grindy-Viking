@@ -31,5 +31,5 @@ end
 if __FILE__ == $PROGRAM_NAME
   nums = [1, 2, 3, 4, 5, 6, 7, 8]
   rotate(nums, 3)
-  puts nums.join(' ')
+  puts nums.join(" ")
 end

@@ -11,7 +11,7 @@ def update_matrix(mat)
       when 2
         queue << [i, j]
       when 1
-        mat[i][j] = '#'
+        mat[i][j] = "#"
       end
     end
   end
@@ -22,7 +22,7 @@ def update_matrix(mat)
       check_i = src_i + dir_i
       check_j = src_j + dir_j
 
-      next unless valid?(check_i, check_j, mat) && mat[check_i][check_j] == '#'
+      next unless valid?(check_i, check_j, mat) && mat[check_i][check_j] == "#"
 
       mat[check_i][check_j] = mat[src_i][src_j] + 1
       queue << [check_i, check_j]

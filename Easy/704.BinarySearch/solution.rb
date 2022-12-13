@@ -16,7 +16,7 @@ def search(nums, target)
   binary_search(nums, 0, nums.length - 1, target)
 end
 
-nums = gets.chomp.split(',').map(&:to_i)
+nums = gets.chomp.split(",").map(&:to_i)
 target = gets.chomp.to_i
 puts search(nums, target)
 # -1, 0, 3, 5, 6, 7, 8, 9, 12
