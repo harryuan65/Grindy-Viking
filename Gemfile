@@ -14,6 +14,6 @@ gem "sorbet-static-and-runtime", "~> 0.5.9531"
 gem "pry"
 gem "awesome_print", "~> 1.9"
 gem "thor"
-gem "katagen", git: "https://github.com/harryuan65/Katagen"
+gem "katagen"
 
 # rubocop:enable Naming/FileName
