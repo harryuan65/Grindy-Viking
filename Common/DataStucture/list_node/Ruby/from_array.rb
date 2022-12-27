@@ -4,6 +4,7 @@ require_relative "./list_node"
 
 class Array
   def to_linked_list
+    return if empty?
     first, *rest = self
     input_list = ListNode.new(first)
     input_list_head = input_list
