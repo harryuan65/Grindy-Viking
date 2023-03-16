@@ -8,12 +8,14 @@ class Node
 end
 
 root = Node.new(1)
-root.left = Node.new(2)
-root.right = Node.new(3, Node.new(4), Node.new(5))
+root.left = Node.new(2, Node.new(4), Node.new(5))
+root.right = Node.new(3, Node.new(6), Node.new(7))
 
-#     1
-#   2  3
-#      4  5
+#       1
+#     /   \
+#    2     3
+#   / \   / \
+#  4  5   6  7
 
 # Root -> L -> R
 def pre_order(node)
