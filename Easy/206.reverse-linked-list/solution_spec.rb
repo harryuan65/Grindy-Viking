@@ -1,5 +1,6 @@
-require_relative "./solution4_best"
+FILE_NAME = ENV["TESTEE"] || "solution.rb"
 require_relative "./test_cases"
+require_relative FILE_NAME
 
 RSpec.describe FILE_NAME do
   TEST_CASES.each do |tc|

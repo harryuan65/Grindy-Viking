@@ -1,6 +1,6 @@
 FILE_NAME = ENV["TESTEE"] || "solution.rb"
 require_relative FILE_NAME
-require_relative "../../Common/DataStucture/list_node/Ruby/from_array.rb"
+require_relative "../../helpers/list_node/from_array.rb"
 
 TEST_CASES = [
   {

@@ -1,4 +1,4 @@
-require_relative "../../Common/Ruby/DS/list_node/from_array"
+require_relative "../../helpers/list_node/from_array"
 
 TEST_CASES = [
   {

@@ -1,6 +1,5 @@
 # timestamp: 2022-07-28T21:11:53+08:00
 # question: https:/leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree
-require_relative "../../Common/Ruby/DS/binary_tree/to_binary_search_tree.rb"
 # train of thought
 TRAIN_OF_THOUGHT = <<DOC.freeze
   因為 BST 的關係，只要目前看的 node 值 ∈ [p,q] 就可以結束了，如果比 p、q 都大，或是都小，就繼續找。
